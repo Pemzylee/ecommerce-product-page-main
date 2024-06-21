@@ -142,12 +142,12 @@ let lightbox = false;
 function lightBox(thumbsLight, heroLight, index) {
     thumbsLight.forEach((e) => {
         e.children[0].classList.remove("activeImg");
-        e.classList.remove("ring-active");
+        e.classList.remove("ring-active1");
     });
 
     let found = thumbsLight[index - 1]; // Adjust index to match array indexing (starting from 0)
 
-    found.classList.add("ring-active");
+    found.classList.add("ring-active1");
     found.children[0].classList.add("activeImg");
 
     heroLight.src = found.children[0].src;
