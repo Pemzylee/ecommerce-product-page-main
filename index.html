@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <title>E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo">
+      </div>
+      <nav class="nav-bar">
+        <img src="images/icon-menu.svg" class="hamburger" alt="Menu">
+        <ul class="menu">
+          <li><a href="#" class="nav-link">Collections</a></li>
+          <li><a href="#" class="nav-link">Men</a></li>
+          <li><a href="#" class="nav-link">Women</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-images">
+        <div class="cart">
+          <span id="amount-cart" class="amount scale-0">0</span>
+          <img src="images/icon-cart.svg" class="Cart">
+          <div class="popUp-cart">
+            <h4>Cart</h4>
+            <hr>
+            <p class="activeCart">Your cart is empty</p>
+          </div>  
+        </div>
+        <div class="profImg">
+          <img src="images/image-avatar.png" alt="Profile Image">
+        </div>
+      </div>
+    </header>
+    <hr>
+    <section class="main-body">
+      <div class="images">
+        <div class="mobileNextimg">
+          <img src="images/icon-previous.svg" id="previous-mobile" class="previousImg-Mobile" alt="Previous">
+          <img src="images/icon-next.svg" id="next-mobile" class="nextImg-Mobile" alt="Next">
+        </div>
+        <img src="images/image-product-1.jpg" alt="Product Image" class="img1" id="hero">
+        <div class="thumbnail-img">
+          <div class="img-active ring-active">
+            <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1">
+          </div>
+          <div class="img-active">
+            <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2">
+          </div>
+          <div class="img-active">
+            <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3">
+          </div>
+          <div class="img-active">
+            <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4">
+          </div>
+        </div>
+      </div>
+      <div class="description-container">
+        <p class="heading">Sneaker Company</p>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p class="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price-body">
+          <div class="price-container">
+            <h3>$125.00</h3>
+            <h4>50%</h4>
+            <p>$250.00</p>
+          </div>
+          <div class="button">
+            <div class="quantity">
+              <img src="images/icon-minus.svg" alt="Minus" class="minus">
+              <p>0</p>
+              <img src="images/icon-plus.svg" alt="Plus" class="plus">
+            </div>
+            <button class="addtoCartBtn">
+              <img src="images/icon-cart.svg" class="white-svg" alt="Cart Icon">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox hidden" id="light-1"></div>
+    <div class="invisible" id="light-2">
+      <div class="image1">
+        <img src="images/image-product-1.jpg" alt="Product Image" class="img2" id="hero-lightbox">
+        <img src="images/icon-close.svg" alt="Close" class="closeMenu">
+        <div class="previousNextimg">
+          <button class="previousbtn">
+            <img src="images/icon-previous.svg" id="previous" class="previousImg" alt="Previous">
+          </button>
+          <button class="nextbtn">
+            <img src="images/icon-next.svg" id="next" class="nextImg" alt="Next">
+          </button>
+        </div>
+        <div class="thumbnails thumbnails-light">
+          <div class="img-1-active ring-active1">
+            <img src="images/image-product-1.jpg" alt="Thumbnail 1" class="activeImg">
+          </div>
+          <div class="img-2-active">
+            <img src="images/image-product-2.jpg" alt="Thumbnail 2">
+          </div>
+          <div class="img-3-active">
+            <img src="images/image-product-3.jpg" alt="Thumbnail 3">
+          </div>
+          <div class="img-4-active">
+            <img src="images/image-product-4.jpg" alt="Thumbnail 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
